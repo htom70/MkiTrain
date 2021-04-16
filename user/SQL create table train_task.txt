@@ -1,0 +1,14 @@
+use mki;
+create table train_task
+(
+    id               bigint not null auto_increment,
+    task_number                 integer,
+    train_database_name         varchar(255),
+    sampler_name                varchar(255),
+    scaler_name                 varchar(255),
+    feature_selector_name       varchar(255),
+    model_name                  varchar(255),
+    expected_variance           double precision,
+    status                      varchar(255),
+    primary key (id)
+) engine = InnoDB

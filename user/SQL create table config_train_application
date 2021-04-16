@@ -1,0 +1,8 @@
+use mki;
+create table config_train_application
+(
+    id               bigint not null auto_increment,
+    port_number                 integer,
+    pickled_objects_folder      varchar(255),
+    primary key (id)
+) engine = InnoDB

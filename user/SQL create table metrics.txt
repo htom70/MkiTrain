@@ -1,0 +1,36 @@
+create table  if not exists metrics
+(
+    id bigint not null auto_increment,
+    pipeline_name           varchar(255),
+    database_name           varchar(255),
+    sampler_name            varchar(255),
+    scaler_name             varchar(255),
+    feature_selector_name   varchar(255),
+    model_name              varchar(255),
+    TP                      int,
+    FP                      int,
+    TN                      int,
+    FN                      int,
+    sensitivity             double precision,
+    specificity             double precision,
+    accuracy                double precision,
+    balanced_accuracy       double precision,
+    prec                    double precision,
+    recall                  double precision,
+    PPV                     double precision,
+    NPV                     double precision,
+    FNR                     double precision,
+    FPR                     double precision,
+    FDR                     double precision,
+    F_OR                    double precision,
+    f1                      double precision,
+    f_05                    double precision,
+    f2                      double precision,
+    MCC                     double precision,
+    ROCAUC                  double precision,
+    Youdens_statistic       double precision,
+    primary key (id)
+    ) engine = InnoDB
+
+
+
